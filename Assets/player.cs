@@ -7,6 +7,7 @@ public class player : MonoBehaviour
     public float speed = 10.0f;             // Define a velocidade da raquete
     public float boundX = 10f;            // Define os limites em X
     private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
+    public int vidas = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +39,17 @@ public class player : MonoBehaviour
         }
         transform.position = pos;               // Atualiza a posição da raquete
     
+    }
+
+    public void TomarTiro()
+    {
+        FindObjectOfType<Display>().vidas--;
+        vidas--;
+        if(vidas <= 0)
+        {
+            Destroy(gameObject);
+
+        }
     }
 
 }

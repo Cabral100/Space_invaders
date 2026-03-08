@@ -3,10 +3,12 @@ using UnityEngine;
 public class Shot : MonoBehaviour
 {
     public KeyCode shot = KeyCode.Space;
-    public float speed = 0f; 
-    public float inicioX = 0f;
-    public float inicioY = -3.39f;
+    private float speed = 5f;
     private Rigidbody2D rb2d; 
+    public GameObject player;
+    public GameObject morte;
+    bool isShot = false;
+    public float pontos = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,23 +17,24 @@ public class Shot : MonoBehaviour
 
     public void shotFunction()
     {
-        rb2d.linearVelocity = new Vector2(0f, 5.0f);
+        rb2d.linearVelocity = new Vector2(0f, speed);
     }
 
     void OnCollisionEnter2D (Collision2D coll){
         var pos = transform.position;
-
+        var posPlayer = player.transform.position;
         if (coll.gameObject.tag == "topWall"){
-            pos.x = inicioX;
-            pos.y = inicioY;
-            speed = 0f;
+            isShot = false;
         }
 
         if (coll.gameObject.tag == "enemy"){
-            Destroy(coll.gameObject); 
-            pos.x = inicioX;
-            pos.y = inicioY;
-            speed = 0f;
+            pontos++;
+            FindObjectOfType<Display>().score += 1;
+            coll.gameObject.GetComponent<Invaders>().DestroyInvader();
+            isShot = false;
+        }
+        if (coll.gameObject.tag == "EnemyShot"){
+            isShot = false;
         }
 
         transform.position = pos;
@@ -39,8 +42,26 @@ public class Shot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(shot)){
+        if (pontos > 30){
+            speed = 11f;
+        }
+        else if (pontos > 20){
+            speed = 9f;
+        }
+        else if (pontos > 10){
+            speed = 7f;
+        }
+        var posPlayer = player.transform.position;
+        if (!isShot)
+        {
+            transform.position = new Vector2(posPlayer.x, posPlayer.y + 1f);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        if (Input.GetKeyDown(shot) && !isShot)
+        {
             shotFunction();
+            isShot = true;
         }
     }
 }
