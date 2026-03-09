@@ -7,7 +7,7 @@ public class player : MonoBehaviour
     public float speed = 10.0f;             // Define a velocidade da raquete
     public float boundX = 10f;            // Define os limites em X
     private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
-    public int vidas = 3;
+    public static int vidas = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +17,6 @@ public class player : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-
         var vel = rb2d.linearVelocity;                // Acessa a velocidade da raquete
         if (Input.GetKey(moveRight)) {             // Velocidade da Raquete para ir para cima
             vel.x = speed;

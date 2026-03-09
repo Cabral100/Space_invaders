@@ -9,6 +9,7 @@ TagManager:
   - bottomWall
   - shot
   - EnemyShot
+  - naveMae
   layers:
   - Default
   - TransparentFX

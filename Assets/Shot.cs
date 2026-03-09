@@ -28,12 +28,20 @@ public class Shot : MonoBehaviour
         }
 
         if (coll.gameObject.tag == "enemy"){
-            pontos++;
-            FindObjectOfType<Display>().score += 1;
+            pontos+= 10;
+            FindObjectOfType<Display>().score += 10;
             coll.gameObject.GetComponent<Invaders>().DestroyInvader();
             isShot = false;
         }
+        if (coll.gameObject.tag == "naveMae"){
+            pontos+= 50;
+            FindObjectOfType<Display>().score += 50;
+            coll.gameObject.GetComponent<BossEnemy>().DestroyNaveMae();
+            isShot = false;
+        }
         if (coll.gameObject.tag == "EnemyShot"){
+            pontos+= 1;
+            FindObjectOfType<Display>().score += 1;
             isShot = false;
         }
 
@@ -42,13 +50,13 @@ public class Shot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pontos > 30){
+        if (pontos > 300){
             speed = 11f;
         }
-        else if (pontos > 20){
+        else if (pontos > 200){
             speed = 9f;
         }
-        else if (pontos > 10){
+        else if (pontos > 100){
             speed = 7f;
         }
         var posPlayer = player.transform.position;
