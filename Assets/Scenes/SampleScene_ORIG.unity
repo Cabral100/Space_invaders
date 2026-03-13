@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &27009788
 Rigidbody2D:
@@ -357,6 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &96694660
 Rigidbody2D:
@@ -561,6 +563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &99562253
 Rigidbody2D:
@@ -765,8 +768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230.61719, y: -176}
-  m_SizeDelta: {x: 506.9441, y: 58.9237}
+  m_AnchoredPosition: {x: -130, y: -100}
+  m_SizeDelta: {x: 447.6286, y: 38.6698}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110042425
 MonoBehaviour:
@@ -781,7 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -844,6 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &181374041
 Rigidbody2D:
@@ -1048,6 +1052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &211922963
 Rigidbody2D:
@@ -1516,6 +1521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &369391762
 Rigidbody2D:
@@ -1720,6 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &492616819
 Rigidbody2D:
@@ -2061,6 +2068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &532125960
 Rigidbody2D:
@@ -2349,6 +2357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &647953596
 Rigidbody2D:
@@ -2553,6 +2562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &663691255
 Rigidbody2D:
@@ -2733,6 +2743,8 @@ GameObject:
   m_Component:
   - component: {fileID: 668784291}
   - component: {fileID: 668784290}
+  - component: {fileID: 668784293}
+  - component: {fileID: 668784292}
   m_Layer: 0
   m_Name: Display
   m_TagString: Untagged
@@ -2755,21 +2767,67 @@ MonoBehaviour:
   hudText: {fileID: 110042425}
   score: 0
   vidas: 3
---- !u!4 &668784291
-Transform:
+--- !u!224 &668784291
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668784289}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.19431, y: 0.58976, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1152251677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -365.57, y: -150.89}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &668784292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668784289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &668784293
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668784289}
+  m_CullTransparentMesh: 1
 --- !u!1 &703290512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,6 +2862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &703290514
 Rigidbody2D:
@@ -3008,6 +3067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &749100299
 Rigidbody2D:
@@ -3208,6 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   levelInterval: 5
+  player: {fileID: 668784290}
 --- !u!4 &773751696
 Transform:
   m_ObjectHideFlags: 0
@@ -3257,6 +3318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &777029219
 Rigidbody2D:
@@ -3461,6 +3523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &805136172
 Rigidbody2D:
@@ -3743,6 +3806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &842129633
 Rigidbody2D:
@@ -3965,6 +4029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &926578512
 Rigidbody2D:
@@ -4265,6 +4330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &963820261
 Rigidbody2D:
@@ -4373,6 +4439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &981145716
 Rigidbody2D:
@@ -4577,6 +4644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1105328332
 Rigidbody2D:
@@ -4841,6 +4909,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 668784291}
   - {fileID: 110042424}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4883,6 +4952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1185565159
 Rigidbody2D:
@@ -5087,6 +5157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1318967109
 Rigidbody2D:
@@ -5291,6 +5362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1333116333
 Rigidbody2D:
@@ -5540,6 +5612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1415699650
 Rigidbody2D:
@@ -5744,6 +5817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1440762446
 Rigidbody2D:
@@ -5948,6 +6022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1476489845
 Rigidbody2D:
@@ -6152,6 +6227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1519417898
 Rigidbody2D:
@@ -6356,6 +6432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1523190805
 Rigidbody2D:
@@ -6560,6 +6637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1531559785
 Rigidbody2D:
@@ -6998,8 +7076,8 @@ Transform:
   m_GameObject: {fileID: 1568124675}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0442, y: -0.0414, z: 0}
-  m_LocalScale: {x: 0.46593308, y: 0.25261715, z: 1}
+  m_LocalPosition: {x: 0.0165, y: 0.1057, z: 0}
+  m_LocalScale: {x: 0.4055895, y: 0.26274565, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7038,6 +7116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1702410526
 Rigidbody2D:
@@ -7242,6 +7321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1783658552
 Rigidbody2D:
@@ -7446,6 +7526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1802529907
 Rigidbody2D:
@@ -7729,6 +7810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1895844323
 Rigidbody2D:
@@ -7933,6 +8015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &1965046219
 Rigidbody2D:
@@ -8137,6 +8220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &2046856239
 Rigidbody2D:
@@ -8341,6 +8425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &2065721672
 Rigidbody2D:
@@ -8728,6 +8813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   destroyedSprite: {fileID: -1220383940, guid: f49c47c851ec342419ea76a446ba2de2, type: 3}
+  scoreValue: 10
   enemyBullet: {fileID: 6439523896388572981, guid: 3df9f14b892bb524ea6f853257863b5d, type: 3}
 --- !u!50 &2139526013
 Rigidbody2D:
@@ -9043,7 +9129,6 @@ SceneRoots:
   - {fileID: 2390592006824797197}
   - {fileID: 1383193609}
   - {fileID: 773751696}
-  - {fileID: 668784291}
   - {fileID: 1152251677}
   - {fileID: 1846621533}
   - {fileID: 1568124677}

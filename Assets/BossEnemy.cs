@@ -62,6 +62,8 @@ public class BossEnemy : MonoBehaviour
 
     public void DestroyNaveMae()
     {
+        GameManager gm = FindObjectOfType<GameManager>();
+        gm.AddScore(50);
         StartCoroutine(DestroyAnimation());
     }
 

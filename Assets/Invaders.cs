@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class Invaders : MonoBehaviour
 {
@@ -8,7 +7,9 @@ public class Invaders : MonoBehaviour
     private SpriteRenderer sr;
 
     public Sprite destroyedSprite;
-
+    public int scoreValue = 10; // muda no Inspector por tipo de alien
+    public float minShootTime = 3f;
+    public float maxShootTime = 8f;
     private float timer = 0.0f;
     private float waitTime = 1.0f;
     private float speed = 2.0f;
@@ -49,10 +50,12 @@ public class Invaders : MonoBehaviour
 
     public void DestroyInvader()
     {
+        GameManager gm = FindObjectOfType<GameManager>();
+        gm.AddScore(scoreValue);
         StartCoroutine(DestroyAnimation());
     }
 
-    System.Collections.IEnumerator DestroyAnimation()
+    IEnumerator DestroyAnimation()
     {
         GetComponent<Animator>().enabled = false;
         sr.sprite = destroyedSprite;
